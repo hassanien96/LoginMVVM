@@ -12,9 +12,9 @@ public class Interceptors {
 
         OkHttpClient.Builder okhttpClientBuilder = new OkHttpClient.Builder();
 
-        okhttpClientBuilder.connectTimeout(30, TimeUnit.HOURS);
-        okhttpClientBuilder.readTimeout(30, TimeUnit.HOURS);
-        okhttpClientBuilder.writeTimeout(30, TimeUnit.HOURS);
+        okhttpClientBuilder.connectTimeout(3, TimeUnit.SECONDS);
+        okhttpClientBuilder.readTimeout(3, TimeUnit.SECONDS);
+        okhttpClientBuilder.writeTimeout(3, TimeUnit.SECONDS);
 
 
         okhttpClientBuilder.addInterceptor(loggingClient());
