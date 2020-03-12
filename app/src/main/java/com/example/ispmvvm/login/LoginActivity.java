@@ -57,7 +57,7 @@ public class LoginActivity extends AppCompatActivity implements AuthListener {
     @Override
     public void onSuccess(ResponseBody loginResponse) {
 
-        Toast.makeText(this, loginResponse.toString(), Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, "login success", Toast.LENGTH_SHORT).show();
 
     }
 
