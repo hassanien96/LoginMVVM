@@ -1,0 +1,2 @@
+rootProject.name='ISPMVVM'
+include ':app'
